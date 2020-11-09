@@ -80,12 +80,12 @@ let profitLoss = 0;
 // }
 
 
-let x = null;
-if (parseInt(document.getElementById('amount').value) != null) {
-    x = parseInt(document.getElementById('amount').value);
-}
+// let x = null;
+// if (parseInt(document.getElementById('amount').value) != null) {
+//     x = parseInt(document.getElementById('amount').value);
+// }
 
-// let x = parseInt(document.getElementById('amount').value);
+// // let x = parseInt(document.getElementById('amount').value);
 function findValue(x) {
     if (document.getElementById("amount").value) {
 
@@ -228,7 +228,7 @@ function valuesTotal() {
     totals.trialBalanceEquityLiability = getFromStorage("liabilities") + getFromStorage("equity");
     document.getElementById("total-trialBalanceCr").innerHTML = totals.trialBalanceEquityLiability;
 
-    totals.profitLossIncome = JgetFromStorage("incomes");
+    totals.profitLossIncome = getFromStorage("incomes");
 
     document.getElementById("total-ProfitLossCr").innerHTML = totals.profitLossIncome;
     totals.profitLossExpense = getFromStorage("expenses");
