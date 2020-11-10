@@ -80,12 +80,10 @@ let profitLoss = 0;
 // }
 
 
-// let x = null;
-// if (parseInt(document.getElementById('amount').value) != null) {
-//     x = parseInt(document.getElementById('amount').value);
-// }
 
-// // let x = parseInt(document.getElementById('amount').value);
+
+// let x = parseInt(document.getElementById('amount').value);
+
 function findValue(x) {
     if (document.getElementById("amount").value) {
 
