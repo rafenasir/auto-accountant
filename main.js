@@ -42,6 +42,13 @@ let totals = {
 };
 let profitLoss = 0;
 
+// // let temp1 = null;
+// if (ocument.getElementById("template").content){
+// let temp1 = document.getElementById("template").content;}
+// let tempTag = document.importNode(temp1, true);
+
+
+
 
 // formulas to find the final value or heads
 // function expensesValue() {
