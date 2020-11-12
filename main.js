@@ -42,53 +42,18 @@ let totals = {
 };
 let profitLoss = 0;
 
-// let sampleTemplate = document.getElementById('template').content;
 
+let x = 0;
+// let sample1 = 0;
+// let templateNode = 0;
+function showTemplate() {
+    sample1 = document.getElementById('template').content;
+    templateNode = document.importNode(sample1, true);
+    document.getElementById("template-div").appendChild(templateNode);
+}
 
-
-
-// formulas to find the final value or heads
-// function expensesValue() {
-//     finalValues.expenses = expenses.debit - expenses.credit;
-//     localStorage.setItem("expenses", JSON.stringify(finalValues.expenses));
-//     document.getElementById("exp").innerHTML = JSON.parse(localStorage.getItem("expenses"));
-// }
-
-// function assetsValue() {
-//     finalValues.assets = assets.debit - assets.credit;
-//     localStorage.setItem("assets", JSON.stringify(finalValues.assets));
-
-//     document.getElementById("ass").innerHTML = JSON.parse(localStorage.getItem("assets"));
-// }
-
-// function incomeValue() {
-//     finalValues.incomes = incomes.credit - incomes.debit;
-//     localStorage.setItem("income", JSON.stringify(finalValues.incomes));
-
-//     document.getElementById("inc").innerHTML = JSON.parse(localStorage.getItem("income"));
-// }
-
-// function equityValue() {
-//     finalValues.equity = equity.credit - equity.debit;
-//     localStorage.setItem("equity", JSON.stringify(finalValues.equity));
-
-//     document.getElementById("equity").innerHTML = JSON.parse(localStorage.getItem("equity"));
-
-// }
-
-// function liabilitiesValue() {
-//     finalValues.liabilities = liabilities.credit - liabilities.debit;
-//     localStorage.setItem("liability", JSON.stringify(finalValues.liabilities));
-
-//     document.getElementById("liab").innerHTML = JSON.parse(localStorage.getItem("liability"));
-// }
-
-
-
-
-// let x = parseInt(document.getElementById('amount').value);
-
-function findValue(x) {
+function findValue() {
+    x = parseInt(document.getElementById("amount").value);
     if (document.getElementById("amount").value) {
 
         if (document.getElementById("inputGroupSelect01").value === "1") {
@@ -214,12 +179,6 @@ function headsValue() {
     document.getElementById("liab").innerHTML = JSON.parse(localStorage.getItem("liabilities"));
 }
 
-// finalValues = {
-//     expenses: getFromStorage("expenses"),
-//     assets: getFromStorage("assets"),
-//     incomes: getFromStorage("incomes"),
-//     liabilities: getFromStorage("liabilities"),
-//     equity: getFromStorage("equity")
 
 //Values Total
 function valuesTotal() {
@@ -249,4 +208,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
     headsValue();
     profitLossFigure();
     findValue();
+    showTemplate()
+    // sample1 = document.getElementById('template').content;
 })

@@ -1,3 +1,19 @@
 /* main {
     background-image: url(./media/background\ image.jpeg);
-} */
+/* } */
+
+#header {
+    /* position: fixed;
+    z-index: 10;
+    align-items: center; */
+}
+
+.main-image {
+    background-image: url("./media/background-image-1.jpeg");
+    height: 50vh;
+    margin-top: 3px;
+}
+
+body {
+    /* background-image: url("./media/background-image-1.jpeg"); */
+}
