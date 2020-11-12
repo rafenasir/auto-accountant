@@ -42,10 +42,7 @@ let totals = {
 };
 let profitLoss = 0;
 
-// // let temp1 = null;
-// if (ocument.getElementById("template").content){
-// let temp1 = document.getElementById("template").content;}
-// let tempTag = document.importNode(temp1, true);
+// let sampleTemplate = document.getElementById('template').content;
 
 
 
