@@ -44,13 +44,7 @@ let profitLoss = 0;
 
 
 let x = 0;
-// let sample1 = 0;
-// let templateNode = 0;
-function showTemplate() {
-    sample1 = document.getElementById('template').content;
-    templateNode = document.importNode(sample1, true);
-    document.getElementById("template-div").appendChild(templateNode);
-}
+
 
 function findValue() {
     x = parseInt(document.getElementById("amount").value);
@@ -152,7 +146,7 @@ function findValue() {
             document.getElementById("amount").value = null
             return equity.debit
         } else {
-            alert("Please Choose a Head")
+            toastr["warning"]("Please choose some Head.")
         }
     }
 }
@@ -208,6 +202,4 @@ document.addEventListener('DOMContentLoaded', function(event) {
     headsValue();
     profitLossFigure();
     findValue();
-    showTemplate()
-    // sample1 = document.getElementById('template').content;
 })
