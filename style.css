@@ -2,17 +2,58 @@
     background-image: url(./media/background\ image.jpeg);
 /* } */
 
+
+/* .row {
+    background: url(./media/background-image-1.jpeg) fixed center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
 #header {
-    /* position: fixed;
-    z-index: 10;
-    align-items: center; */
+    position: sticky;
 }
 
-.main-image {
+body {
+    background-color: #875A7B;
+}
+
+.linkedin {
+    color: rgb(53, 53, 240) font-
+}
+
+main {
+    margin-top: 2vh;
+}
+
+.banner {
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color: rgb(223, 221, 221);
+}
+
+.main-img {
+    /* background-image: url(./media/background-banner-1.jpeg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* height: 75vh; */
+}
+
+.nav li:hover {
+    opacity: 0.5;
+}
+
+
+/* p {
+    color: rgb(231, 33, 33);
+} */
+
+
+/* .main-image {
     background-image: url("./media/background-image-1.jpeg");
     height: 50vh;
     margin-top: 3px;
-}
+} */
 
 body {
     /* background-image: url("./media/background-image-1.jpeg"); */
