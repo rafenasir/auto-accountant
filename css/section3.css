@@ -1,0 +1,33 @@
+.bg,
+.bg-filter{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+ }
+.bg-filter{
+  z-index:-99;
+  opacity:0.2;
+  background: -webkit-linear-gradient(rgba(49,224,247,1) 0%, rgba(90,77,184,1) 100%);
+  background: -moz-linear-gradient(rgba(49,224,247,1) 0%, rgba(90,77,184,1) 100%);
+  background: -o-linear-gradient(rgba(49,224,247,1) 0%, rgba(90,77,184,1) 100%);
+  background: linear-gradient(rgba(49,224,247,1) 0%, rgba(90,77,184,1) 100%);
+}
+
+.intro-text{
+  font-family:"Open Sans";
+  widht: 50%;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  position: absolute;
+  font-size:56px;
+  text-transform:uppercase;
+  color:white;
+}

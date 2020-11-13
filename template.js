@@ -2,9 +2,9 @@ document.write(`\
 <template id="nav-template">\
 <header>\
     <div class="container">\
+    <img src="./media/blue_background.png" alt="background" width="100%" height="100vh">
         <div class="col pl-0 pr-0">\
-            <img src="./media/blue_background.png" alt="background" width="100%" height="100vh">\
-            <ul class="nav justify-content-end bg-primary">\
+            <ul class="nav justify-content-end";>\
                 <li class="nav-item"><a class="nav-link active text-white " href="index.html">Home</a></li>\
                 <li class="nav-item"><a class="nav-link active text-white" href="project.html">Management System</a></li>\
                 <li class="nav-item"><a class="nav-link active text-white" href="contact.html">Contact</a></li>\
@@ -25,9 +25,12 @@ function showNavTemplate() {
 document.addEventListener('DOMContentLoaded', function(event) {
     showNavTemplate();
     customiseToastr();
-    
+
 })
 
+// bg-primary
+
+{ /* <img src="./media/blue_background.png" alt="background" width="100%" height="100vh">\ */ }
 
 function customiseToastr() {
     toastr.options = {
@@ -46,5 +49,5 @@ function customiseToastr() {
         "hideEasing": "linear",
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
-      }
+    }
 }

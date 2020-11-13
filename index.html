@@ -5,172 +5,65 @@
     <title>Accounting Management</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Auto Accountant</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body style="background-color: grey;">
     <script src="template.js"></script>
 
-    <div id="template-div">
+    <body>
 
-    </div>
+        <!--.preloader-->
+        <!-- <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div> -->
+        <!--/.preloader-->
+        <div id="template-div">
 
+        </div>
 
-    <main>
-        <div class=" banner container">
-            <div class=" main-img row">
-                <div class="mt-3 col-lg-6 col-sm-6" style="background-color:black">
-                    <h2>Accounts Management System</h2>
-                    <p>You can process your financial transactions in an easy way and leave the rest on us. We will handle that for you</p>
+        <header id="home">
+            <div class="container animation">
+                <div class="content">
+                    <div id="large-header" class="large-header">
+                        <canvas id="demo-canvas"></canvas>
+                        <div id="template-div">
+
+                        </div>
+                        <h1 class="main-title">Auto Accountant </br><span class="thin">Accounting Management System</span></h1>
+                    </div>
+
                 </div>
-                <div class=" mt-3 col-lg-6 col-sm-6 ">
+                <!-- /container -->
 
-                    <img calss=" " src="media/background-image-1.jpeg " width="100% ">
-                </div>
+                <script type="text/javascript" src="js/jquery.js"></script>
+                <script type="text/javascript" src="js/main.js"></script>
+                <script src="js/TweenLite.min.js"></script>
+                <script src="js/EasePack.min.js"></script>
+                <script src="js/demo-1.js"></script>
+
+
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js " integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=" anonymous "></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+
+
+    </body>
+
+    <footer>
+        <!-- <div class="container ">
+            <div class="col pl-0 pr-0 ">
+                <img src="./media/blue_background.png " alt="background " width="100% " height="100vh ">
             </div>
-        </div>
-
-
-
-        <!-- 
-
-
-        <div id="accont-management " class="container ">
-            <div class="row ">
-
-                <div class="mt-3 mb-3 col-lg-4 col-sm-12 " ;>
-                    <div class="col-md-12 col-lg-12 col-sm-12 " style="background-color: white; height: auto ">
-
-                        <h3>Enter Your Invoice Here</h3>
-                        <form onsubmit="return false ">
-                            <div class="input-group mb-3 ">
-                                <div class="input-group-prepend ">
-                                    <label class="input-group-text " for="inputGroupSelect01 ">Head</label>
-                                </div>
-                                <select class="custom-select " id="inputGroupSelect01 ">
-                                <option selected>Choose...</option>
-                                <option value="1 ">Expense Increased</option>
-                                <option value="2 ">Expense Decreased</option>
-                                <option value="3 ">Assets Increased</option>
-                                <option value="4 ">Assets Decreased</option>
-                                <option value="5 ">Income Increased</option>
-                                <option value="6 ">Income Decreased</option>
-                                <option value="7 ">Liabilities Increased</option>
-                                <option value="8 ">Liabilities Decreased </option>
-                                <option value="9 ">Equity Increased </option>
-                                <option value="10 ">Equity Decreased</option>
-                                </select>
-
-
-                            </div>
-                            <input id="amount " class="form-control form-control-lg " type="number " placeholder="Enter Amount ">
-
-                            <input class="my-2 btn btn-primary " type="submit " value="Submitt " onclick="findValue(parseInt(document.getElementById( 'amount').value)); valuesTotal(); profitLossFigure(); ">
-
-                        </form>
-                    </div>
-
-                </div>
-                <div class=" mt-3 col-lg-4 col-sm-12 " ;>
-                    <div class="col-md-12 col-lg-12 col-sm-12 " style="background-color: white; height: auto; ">
-                        <h5>Trial Balance</h5>
-                        <table class="table ">
-                            <thead class="thead-dark ">
-                                <th scope="col ">Heads</th>
-                                <th scope="col ">Amount</th>
-                                <th scope="col ">Total</th>
-                            </thead>
-                            <tr>
-                                <td class="trialBalance-head ">Assets</td>
-                                <td class="trialBalance-result " colspan="2 " id="ass ">0</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="2 "><strong>Total</strong></td>
-                                <td id="total-trialBalanceDr "><strong>0</strong></td>
-
-                            </tr>
-                            <tr>
-                                <td class="trialBalance-head ">Liabilities</td>
-                                <td class="trialBalance-result " id="liab " colspan="2 ">0</td>
-
-                            </tr>
-                            <tr>
-                                <td class="trialBalance-head ">Equity</td>
-                                <td class="trialBalance-result " id="equity " colspan="2 ">0</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="2 "><strong>Total</strong></td>
-                                <td id="total-trialBalanceCr "><strong>0</strong></td>
-
-                            </tr>
-
-                        </table>
-                    </div>
-                </div>
-                <div class="mt-3 mb-3 col-lg-4 col-sm-12 ">
-                    <div class="col-md-12 col-lg-12 col-sm-12 " style="background-color: white; height: auto; ">
-                        <h5>Profit & Loss</h5>
-                        <table class="table ">
-                            <thead class="thead-dark ">
-                                <th scope="col ">Heads</th>
-                                <th scope="col ">Amount</th>
-                                <th scope="col ">Total</th>
-                            </thead>
-                            <tr>
-                                <td class="trialBalance-head ">Incomes</td>
-                                <td class="trialBalance-result " id="inc " colspan="2 ">0</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="2 "><strong>Total</strong></td>
-                                <td id="total-ProfitLossCr "><strong>0</strong></td>
-
-                            </tr>
-                            <tr>
-                                <td class="trialBalance-head ">Expenses</td>
-                                <td class="trialBalance-result " id="exp " colspan="2 ">0</td>
-
-                            </tr>
-                            <tr>
-                                <td colspan="2 "><strong>Total</strong></td>
-                                <td id="total-ProfitLossDr "><strong>0</strong></td>
-
-                            </tr>
-
-                            <tr>
-                                <td colspan="2 "><strong>Profit / Loss</strong></td>
-                                <td id="profitLoss "><strong>0</strong></td>
-
-                            </tr>
-
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </main> -->
-
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js " integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=" anonymous "></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
-
-
-</body>
-
-<footer>
-    <div class="container ">
-        <div class="col pl-0 pr-0 ">
-            <img src="./media/blue_background.png " alt="background " width="100% " height="100vh ">
-        </div>
-        <div class="col pl-0 ">
-
+            <div class="col pl-0 "> -->
+        <div>
             <p>&copy RafeNasir </p>
         </div>
-    </div>
+        <!-- </div> -->
 
 
-</footer>
+    </footer>
 
 </html>
