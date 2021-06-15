@@ -2,7 +2,6 @@
     background-image: url(./media/background\ image.jpeg);
 /* } */
 
-
 /* .row {
     background: url(./media/background-image-1.jpeg) fixed center;
     background-repeat: no-repeat;
@@ -10,49 +9,52 @@
 } */
 
 #header {
-    position: sticky;
+  position: sticky;
 }
 
 body {
-    background-color: #875A7B;
+  background-color: #875a7b;
 }
 
 .linkedin {
-    color: rgb(53, 53, 240) font-
+  color: rgb(53, 53, 240) font-;
 }
 
 main {
-    margin-top: 2vh;
+  margin-top: 2vh;
 }
 
 .banner {
-    text-align: center;
-    background-color: rgb(15, 15, 15);
-    color: rgb(223, 221, 221);
+  text-align: center;
+  background-color: rgb(15, 15, 15);
+  color: rgb(223, 221, 221);
 }
 
 .main-img {
-    /* background-image: url(./media/background-banner-1.jpeg);
+  /* background-image: url(./media/background-banner-1.jpeg);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover; */
-    /* height: 75vh; */
+  /* height: 75vh; */
 }
 
 .nav li:hover {
-    opacity: 0.5;
-    color: black;
+  opacity: 0.5;
+  color: black;
 }
 
 .contact-body {
-    background-color: grey;
+  background-color: grey;
 }
 
+.invoice-list {
+  background-color: white;
+  height: 60vh;
+}
 
 /* p {
     color: rgb(231, 33, 33);
 } */
-
 
 /* .main-image {
     background-image: url("./media/background-image-1.jpeg");
@@ -61,5 +63,5 @@ main {
 } */
 
 body {
-    /* background-image: url("./media/background-image-1.jpeg"); */
+  /* background-image: url("./media/background-image-1.jpeg"); */
 }
